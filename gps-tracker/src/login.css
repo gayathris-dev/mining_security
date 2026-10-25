@@ -1,0 +1,121 @@
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ---------- Brand side ---------- */
+.login-brand {
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  overflow: hidden;
+  background: #0d1320;
+  border-right: 1px solid var(--border);
+}
+.login-brand .hero-glow {
+  inset: -10% -20% auto -20%;
+  height: 80%;
+}
+.login-brand > * {
+  position: relative;
+}
+.login-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--text);
+}
+.login-brand-body h2 {
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+.login-brand-body p {
+  color: var(--muted);
+  max-width: 440px;
+}
+.login-map {
+  position: relative;
+  margin-top: 2rem;
+  max-width: 480px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
+}
+.login-map svg {
+  display: block;
+  width: 100%;
+  background: #0b101b;
+}
+.login-map .chip-a {
+  top: 10px;
+  left: 10px;
+}
+.login-foot {
+  color: var(--muted);
+}
+
+/* ---------- Form side ---------- */
+.login-form-wrap {
+  display: grid;
+  place-items: center;
+  padding: 2rem 1rem;
+}
+.login-card {
+  width: 100%;
+  max-width: 420px;
+}
+.login-title {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+.login-card .form-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.login-card .dark-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+.pw-toggle {
+  border-color: var(--border);
+  background: var(--panel-2);
+  color: var(--muted);
+}
+.pw-toggle:hover {
+  color: #fff;
+  background: var(--border);
+}
+.demo-box {
+  background: var(--panel);
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+}
+.back-link {
+  margin-top: 1.5rem;
+  background: none;
+  border: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  padding: 0;
+}
+.back-link:hover {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .login-page {
+    grid-template-columns: 1fr;
+  }
+}
