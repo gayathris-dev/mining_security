@@ -40,7 +40,7 @@ Change the demo city by editing `CENTER` at the top of `useFleet.js`.
 
 ### Live GPS Tracking Dashboard
 
-A single-page fleet-tracking application built with **React**, **Bootstrap**, and **Leaflet**, featuring a marketing website, secure admin login, and a real-time monitoring dashboard.
+A single-page fleet-tracking application built with **React**, **Bootstrap**, and **Leaflet**, featuring a marketing website, secure admin login, and a real-time monitoring and managing dashboard.
 
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-Build-646CFF?logo=vite&logoColor=white)
